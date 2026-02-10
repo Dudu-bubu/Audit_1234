@@ -1,0 +1,48 @@
+{
+    "toc_similarity_threshold": 0.80,
+    "min_words_in_section": 8,
+    "revision_order": "desc",
+    "date_format_regex": "^(0?[1-9]|[12]\\d|3[01])/(0?[1-9]|1[0-2])/\\d{4}$",
+    "max_url_head_timeout": 3,
+    "min_na_justification_words": 5,
+    "font_requirements": {
+        "body": {
+            "name": "arial",
+            "size": 12.0
+        },
+        "h1": {
+            "name": "arial",
+            "size": 24.0
+        },
+        "h2": {
+            "name": "arial",
+            "size": 18.0
+        },
+        "h3": {
+            "name": "arial",
+            "size": 16.0
+        }
+    },
+    "blocking_rules": [
+        "MISSING_TOC",
+        "BROKEN_URL",
+        "VERSION_MISMATCH",
+        "AUTHOR_AS_REVIEWER"
+    ],
+    "spelling_ignore_words": [
+        "mary",
+        "davis",
+        "john",
+        "doe",
+        "analytics",
+        "hcl",
+        "hcltech",
+        "annexures",
+        "prem",
+        "SAP",
+        "GDP",
+        "URS",
+        "GXP",
+        "SOP"
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "ABBREVIATION_DEF": {
+        "description": "Check if terms are defined with abbreviations on first use",
+        "good_example": "The User Requirement Specification (URS) document outlines the functional needs.",
+        "bad_example": "The URS document outlines the functional needs.",
+        "instruction": "Ensure technical terms are expanded with abbreviation in parentheses on first use."
+    },
+    "BLANK_JUSTIFICATION": {
+        "description": "Blank sections must have 'Not Applicable' with justification",
+        "good_example": "Not Applicable - This section is not relevant for cloud-based deployments.",
+        "bad_example": "N/A",
+        "instruction": "Any blank or N/A entry must include a clear justification explaining why it's not applicable."
+    },
+    "AUTHOR_NOT_REVIEWER": {
+        "description": "Author should not be reviewer/approver",
+        "good_example": "Author: John Smith | Reviewer: Jane Doe | Approver: Bob Johnson",
+        "bad_example": "Author: John Smith | Reviewer: John Smith | Approver: Jane Doe",
+        "instruction": "Ensure the document author is not listed as a reviewer or approver to maintain objectivity."
+    },
+    "REFERENCES_CHECK": {
+        "description": "References must include control/document numbers",
+        "good_example": "Reference: SOP-QA-001 Quality Assurance Procedures v2.3",
+        "bad_example": "Reference: Quality Assurance Procedures",
+        "instruction": "All references to SOPs, WPs, or artifacts must include the control number or document ID."
+    },
+    "ACRONYMS_SECTION": {
+        "description": "Acronyms section must be in alphabetical order",
+        "good_example": "API - Application Programming Interface\nGDP - Good Documentation Practice\nSOP - Standard Operating Procedure",
+        "bad_example": "GDP - Good Documentation Practice\nAPI - Application Programming Interface\nSOP - Standard Operating Procedure",
+        "instruction": "List all acronyms in alphabetical order in the Acronyms & Definitions section."
+    },
+    "BULLET_PERIODS": {
+        "description": "Bullet points should end with periods",
+        "good_example": "• First item.\n• Second item.\n• Third item.",
+        "bad_example": "• First item\n• Second item\n• Third item",
+        "instruction": "Add a period at the end of each bullet point for consistency."
+    },
+    "AMBIGUOUS_LANGUAGE": {
+        "description": "Avoid ambiguous terms like 'should', 'might', 'could' in requirements",
+        "good_example": "The system must generate an audit trail for all critical actions.",
+        "bad_example": "The system should generate an audit trail for critical actions.",
+        "instruction": "Use definitive language ('must', 'shall') for requirements. Avoid 'should', 'might', 'could', 'may'."
+    },
+    "DATA_INTEGRITY_ALCOA": {
+        "description": "Ensure ALCOA+ principles (Attributable, Legible, Contemporaneous, Original, Accurate)",
+        "good_example": "Performed by: John Doe, Date: 12-Oct-2023",
+        "bad_example": "Performed by: John Doe",
+        "instruction": "All actions must be attributable and contemporaneous. Ensure signatures/initials are accompanied by a date."
+    },
+    "VERSION_CONTROL": {
+        "description": "Document version must match the revision history",
+        "good_example": "Header: Version 2.0 | Revision History: v2.0 - Final Release",
+        "bad_example": "Header: Version 2.0 | Revision History: v1.5 - Draft",
+        "instruction": "Ensure the document version in the header/footer matches the latest entry in the revision history."
+    },
+    "UNRESOLVED_COMMENTS": {
+        "description": "No unresolved comments or track changes should be present",
+        "good_example": "(Clean text without comments)",
+        "bad_example": "[Comment: Check this value]",
+        "instruction": "Ensure there are no unresolved comments, TBDs, or track changes in the final document."
+    },
+    "LOGICAL_CONTRADICTION": {
+        "description": "Ensure consistency in numerical values and requirements across sections",
+        "good_example": "Section 3: Data retention is 5 years.\nSection 8: Archives are kept for 5 years.",
+        "bad_example": "Section 3: Data retention is 5 years.\nSection 8: Archives are kept for 3 years.",
+        "instruction": "Flag any contradictions in numbers, dates, or requirements between different sections of the document."
+    },
+    "TECHNICAL_ACCURACY": {
+        "description": "Distinguish between technical terminology and spelling errors",
+        "good_example": "The kubectl command configures the K8s cluster via API.",
+        "bad_example": "The kubectl command configures the K8s cluster via API (Flagged as typo).",
+        "instruction": "Do not flag standard technical terms (e.g., lowercase CLI commands, acronyms) as spelling errors. Only flag genuine typos."
+    },
+    "MISSING_CONTEXT": {
+        "description": "Ensure sufficient context for high-level compliance or technical statements",
+        "good_example": "Maintain ISO 27001 compliance through quarterly internal audits and annual external certification updates performed by [Team].",
+        "bad_example": "Maintain ISO 27001 compliance for information security.",
+        "instruction": "Flag statements that are too broad or lack 'how' context, especially regarding compliance, audits, or technical migrations."
+    },
+    "AMBIGUOUS_REQUIREMENT": {
+        "description": "Flag keywords like 'seamless' or 'intuitive' that lack measurable metrics",
+        "good_example": "Ensure migration with maximum 2-hour downtime and 100% data integrity verification.",
+        "bad_example": "Ensure seamless migration from the existing platform.",
+        "instruction": "Identify qualitative adjectives ('seamless', 'intuitive', 'fast') and request quantitative metrics instead."
+    }
+}
